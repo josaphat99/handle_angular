@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <ul>
+                <app-c1 [appareilName]="appareil1" [appareilStatus]="'eteint'"></app-c1>
+                <app-c1 [appareilName]="appareil2" [appareilStatus]="'allume'"></app-c1>
+                <app-c1 [appareilName]="appareil3" [appareilStatus]="'allume'"></app-c1>
+            </ul>
+            <button [disabled]="isAuth" (click)="onAllumer()">Tout allumer</button>
+        </div>
+    </div>
+</div>
